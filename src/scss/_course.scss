@@ -1,0 +1,130 @@
+.course {
+  padding: clamp(7.5rem, 6.571rem + 3.81vw, 10rem) 0;
+}
+.course__title {
+  font-weight: 700;
+  font-size: clamp(2rem, 1.629rem + 1.524vw, 3rem);
+  text-align: center;
+  color: #1e1e1e;
+  font-family: "Unbounded", sans-serif;
+  padding-bottom: 16px;
+  span {
+    color: #0945de;
+  }
+}
+.course__descr {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(30, 30, 30, 0.75);
+  padding-bottom: clamp(2.5rem, 2.036rem + 1.905vw, 3.75rem);
+}
+.courser__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+  line-height: 22px;
+  text-align: center;
+  color: #1e1e1e;
+  padding-bottom: clamp(2.5rem, 2.036rem + 1.905vw, 3.75rem);
+}
+.course__steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.course__step {
+  box-shadow: 0 2px 12px 0 rgba(85, 112, 221, 0.15);
+  background: #fff;
+  border-radius: 16px;
+  width: 300px;
+}
+.course__step__intro {
+  // padding: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  border-radius: 16px;
+}
+.course__step:nth-child(1) {
+  .course__step__intro {
+    background: #545454;
+  }
+}
+.course__step:nth-child(2) {
+  transform: translateY(69px);
+  .course__step__intro {
+    background: #dacfbf;
+  }
+}
+.course__step:nth-child(3) {
+  .course__step__intro {
+    background: #e9958a;
+  }
+}
+.course__step:nth-child(4) {
+  transform: translateY(69px);
+  .course__step__intro {
+    background: #98a8f3;
+  }
+}
+.course__step__intro--img {
+  width: 184px;
+  height: 184px;
+  transform: translateY(-36px);
+}
+.course__step__intro--number {
+  padding-bottom: 24px;
+  padding-right: 15px;
+  text-align: end;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Astrolab", sans-serif;
+  display: flex;
+  align-items: flex-end;
+  // height: 50px;
+}
+.course__step__info {
+  padding: 16px 24px 32px 24px;
+}
+.course__step__info--title {
+  font-weight: 700;
+  font-size: clamp(1.125rem, 1.079rem + 0.19vw, 1.25rem);
+  color: #1e1e1e;
+  font-family: "Unbounded", sans-serif;
+  padding-bottom: 8px;
+}
+.course__step__info--descr {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 22px;
+  color: #1e1e1e;
+}
+@media screen and (max-width: 768px) {
+  .course__step:nth-child(2) {
+    transform: translateY(0);
+  }
+  .course__step:nth-child(4) {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 450px) {
+  .course__step {
+    width: 100%;
+  }
+  .course__step__intro {
+    justify-content: space-between;
+  }
+  .course__step__intro--img {
+    margin-left: 40px;
+  }
+  .course__step__intro--number {
+    padding-right: 20px;
+  }
+}

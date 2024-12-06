@@ -1,0 +1,36 @@
+.base {
+  border-radius: 40px;
+  background: #0945de;
+  padding: 40px 0 clamp(2.5rem, 2.036rem + 1.905vw, 3.75rem) 0;
+}
+.base__text {
+  border-radius: 100px;
+  padding: 10px 32px;
+  background: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Unbounded", sans-serif;
+  line-height: 22px;
+  text-align: center;
+  color: #0945de;
+  width: 218px;
+  margin: 0 auto;
+}
+.base__title {
+  font-weight: 700;
+  font-size: clamp(2rem, 1.629rem + 1.524vw, 3rem);
+  text-align: center;
+  color: #fff;
+  font-family: "Unbounded", sans-serif;
+  padding: 16px 0 32px 0;
+}
+.base__descr {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.75);
+  width: clamp(20.625rem, 2.286rem + 75.238vw, 70rem);
+}

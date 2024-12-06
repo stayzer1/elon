@@ -1,0 +1,61 @@
+.lessons {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  .splide__track {
+    padding-bottom: 10px;
+  }
+  .splide__arrow {
+    background: none;
+    top: -18%;
+  }
+  .splide__slide {
+    border-radius: 24px;
+    padding: clamp(1.5rem, 1.314rem + 0.762vw, 2rem)
+      clamp(1rem, 0.814rem + 0.762vw, 1.5rem);
+    width: clamp(15rem, 13.607rem + 5.714vw, 18.75rem);
+    height: clamp(15rem, 13.607rem + 5.714vw, 18.75rem);
+    box-shadow: 0 2px 12px 0 rgba(85, 112, 221, 0.15);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.lessons__title {
+  font-weight: 700;
+  font-size: clamp(2.25rem, 1.971rem + 1.143vw, 3rem);
+  text-align: center;
+  color: #1e1e1e;
+  font-family: "Unbounded", sans-serif;
+  padding-bottom: 32px;
+}
+.splide {
+}
+
+.splide__list {
+}
+
+.lessons__item--img {
+  width: 64px;
+  height: 64px;
+}
+.lessons__item--title {
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  padding-bottom: 8px;
+  font-family: "Unbounded", sans-serif;
+}
+.lessons__item--descr {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
+  color: rgba(30, 30, 30, 0.75);
+  font-family: "Segoe UI", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .lessons {
+    .splide__arrow {
+      top: -21%;
+    }
+  }
+}

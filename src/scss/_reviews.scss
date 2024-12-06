@@ -1,0 +1,90 @@
+.reviews {
+  padding-bottom: clamp(7.5rem, 6.107rem + 5.714vw, 11.25rem);
+  .splide {
+    display: none;
+  }
+}
+.reviews__title {
+  padding-bottom: clamp(2.5rem, 2.686rem + -0.762vw, 2rem);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 1.971rem + 1.143vw, 3rem);
+  text-align: center;
+  color: #1e1e1e;
+  font-family: "Unbounded", sans-serif;
+}
+.reviews__items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.reviews__item {
+  border-radius: 20px;
+  padding: 32px 24px 40px 24px;
+  width: 100%;
+  max-width: clamp(15rem, 13.189rem + 7.429vw, 19.875rem);
+  background: #f8f8f8;
+}
+.reviews__item__profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.reviews__item__profile__info {
+}
+.reviews__item__profile__info--name {
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Unbounded", sans-serif;
+  line-height: 28px;
+  color: #1e1e1e;
+}
+.reviews__item__profile__info--exp {
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "Unbounded", sans-serif;
+  line-height: 20px;
+  color: rgba(30, 30, 30, 0.5);
+}
+.reviews__item__message {
+  .reviews__item__message--symbol:last-child {
+    text-align: end;
+  }
+}
+.reviews__item__message--symbol {
+  font-weight: 400;
+  font-size: 48px;
+  color: rgba(30, 30, 30, 0.25);
+  font-family: "Segoe UI", sans-serif;
+  height: 28px;
+}
+.reviews__item__message--text {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.829rem + 0.19vw, 1rem);
+  color: rgba(30, 30, 30, 0.75);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.splide__track {
+}
+.splide__list {
+}
+.splide__slide {
+}
+@media screen and (max-width: 768px) {
+  .reviews__items {
+    display: none;
+  }
+  .reviews {
+    .splide {
+      display: block;
+    }
+    .splide__slide {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 275px !important;
+    }
+  }
+}
