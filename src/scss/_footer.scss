@@ -134,6 +134,12 @@
 .footer__links--item--text-br {
   display: none;
 }
+@media (min-width: 1201px) and (max-width: 1450px) {
+  .footer__links--item {
+    width: 250px;
+    height: 140px;
+  }
+}
 @media screen and (max-width: 991px) {
   .footer {
     flex-direction: column;

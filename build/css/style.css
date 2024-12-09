@@ -741,7 +741,7 @@ body.locked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   padding-top: 60px;
   height: 227px;
 }
@@ -781,7 +781,7 @@ body.locked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 24px;
+  gap: 15px;
   width: clamp(36.875rem, -48.039rem + 99.315vw, 55rem);
 }
 
@@ -883,8 +883,6 @@ body.locked {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .course__step {
@@ -1422,6 +1420,12 @@ body.locked {
   }
 }
 
+@media screen and (max-width: 1450px) {
+  .about__info--text {
+    padding-bottom: 40px;
+  }
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -1485,6 +1489,10 @@ body.locked {
     display: none;
   }
 
+  .about__info--text {
+    padding-bottom: 20px;
+  }
+
   .guide__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1506,6 +1514,11 @@ body.locked {
   .how__intro--abs {
     right: 15px;
     top: 234px;
+  }
+
+  .course__steps {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1939,5 +1952,12 @@ body.locked {
 
   .how__results__about--text {
     line-height: 19px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1450px) {
+  .footer__links--item {
+    width: 250px;
+    height: 140px;
   }
 }

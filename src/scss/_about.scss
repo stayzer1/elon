@@ -57,6 +57,16 @@
   line-height: clamp(1.063rem, 0.97rem + 0.381vw, 1.313rem);
   color: #fff;
 }
+@media screen and (max-width: 1450px) {
+  .about__info--text {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__info--text {
+    padding-bottom: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .about__inner {
     flex-direction: column;

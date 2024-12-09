@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 .course__step {
   box-shadow: 0 2px 12px 0 rgba(85, 112, 221, 0.15);
@@ -105,6 +105,11 @@
   font-family: "Segoe UI", sans-serif;
   line-height: 22px;
   color: #1e1e1e;
+}
+@media screen and (max-width: 1200px) {
+  .course__steps {
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 768px) {
   .course__step:nth-child(2) {
