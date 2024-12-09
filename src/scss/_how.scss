@@ -136,6 +136,10 @@
   line-height: clamp(1.25rem, 1.204rem + 0.19vw, 1.375rem);
   color: rgba(0, 0, 0, 0.75);
 }
+.how__info--item-mobile,
+.how__results__psycho-mobile {
+  display: none;
+}
 .how__results__about {
   display: flex;
   justify-content: center;
@@ -292,6 +296,18 @@
     gap: 16px;
     padding-top: 16px;
   }
+  .how__info--item-mobile-none,
+  .how__results__psycho-mobile-none {
+    display: none;
+  }
+  .how__results__psycho-mobile {
+    height: 215px;
+  }
+  .how__info--item-mobile,
+  .how__results__psycho-mobile {
+    display: flex;
+    flex-direction: column;
+  }
   .how__results-mobile-wrapper {
     display: flex;
     gap: clamp(1rem, 0.443rem + 2.286vw, 2.5rem);
@@ -336,10 +352,20 @@
   .how__title {
     padding-top: 40px;
   }
+  .how__results__psycho-mobile {
+    height: 260px;
+  }
 }
 @media screen and (max-width: 550px) {
   .how__info--item--title-br {
     display: block;
+  }
+  .how__results-mobile--left--img {
+    display: block;
+    width: clamp(9.75rem, 4.583rem + 20.667vw, 11.688rem);
+  }
+  .how__results__psycho-mobile {
+    height: 180px;
   }
 }
 @media screen and (max-width: 400px) {

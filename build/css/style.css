@@ -770,6 +770,11 @@ body.locked {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.how__info--item-mobile,
+.how__results__psycho-mobile {
+  display: none;
+}
+
 .how__results__about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1727,6 +1732,26 @@ body.locked {
     padding-top: 16px;
   }
 
+  .how__info--item-mobile-none,
+  .how__results__psycho-mobile-none {
+    display: none;
+  }
+
+  .how__results__psycho-mobile {
+    height: 215px;
+  }
+
+  .how__info--item-mobile,
+  .how__results__psycho-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .how__results-mobile-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1883,11 +1908,24 @@ body.locked {
   .how__title {
     padding-top: 40px;
   }
+
+  .how__results__psycho-mobile {
+    height: 260px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .how__info--item--title-br {
     display: block;
+  }
+
+  .how__results-mobile--left--img {
+    display: block;
+    width: clamp(9.75rem, 4.583rem + 20.667vw, 11.688rem);
+  }
+
+  .how__results__psycho-mobile {
+    height: 180px;
   }
 
   .footer__links--item--text-br {
